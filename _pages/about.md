@@ -1,7 +1,7 @@
 ---
-layout: about
-title: about
-permalink: /
+layout: 
+title: 
+permalink: 
 subtitle: PhD student @ <a  href='https://ai.iith.ac.in/index.html'> Dept of AI, IIT Hyderabad </a> • Previously - <a  href='sssihl.edu.in'> Sri Sathya Sai Institute of Hogher Learning </a>
 # subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
@@ -9,10 +9,10 @@ profile:
   align: right
   image: prof_pic.png
   image_circular: false # crops the image to make it circular
-  # more_info: >
-  #   <p>555 your office number</p>
-  #   <p>123 your address street</p>
-  #   <p>Your City, State 12345</p>
+  more_info: >
+    <p>555 your office number</p>
+    <p>123 your address street</p>
+    <p>Your City, State 12345</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
