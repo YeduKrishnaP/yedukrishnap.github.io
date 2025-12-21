@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD student @ <a  href='https://ai.iith.ac.in/index.html'> Dept of AI, IIT Hyderabad </a> • Previously: <a  href='sssihl.edu.in'> Sri Sathya Sai Institute of Hogher Learning </a>
+subtitle: PhD student @ <a  href='https://ai.iith.ac.in/index.html'> Dept of AI, IIT Hyderabad </a> • Previously - <a  href='sssihl.edu.in'> Sri Sathya Sai Institute of Hogher Learning </a>
 # subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
