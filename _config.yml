@@ -138,19 +138,19 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 #   endpoint: # your loops endpoint (e.g., https://app.loops.so/api/newsletter-form/YOUR-ENDPOINT)
 #   # https://loops.so/docs/forms/custom-form
 
-# # -----------------------------------------------------------------------------
-# # Collections
-# # -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Collections
+# -----------------------------------------------------------------------------
 
-# collections:
-#   books:
-#     output: true
-#   news:
-#     defaults:
-#       layout: post
-#     output: true
-#   projects:
-#     output: true
+collections:
+  books:
+    output: true
+  news:
+    defaults:
+      layout: post
+    output: true
+  projects:
+    output: true
 
 # # -----------------------------------------------------------------------------
 # # Jekyll settings
