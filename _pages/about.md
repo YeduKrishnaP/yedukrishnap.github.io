@@ -31,6 +31,6 @@ Hi! I am Yedu Krishna, a first year PhD student at the Indian Institute of Techn
 
 I graduated from [Sri Sathya Sai Institute of Higher Learning](https://www.sssihl.edu.in/) in the summer of 2025 with my Master of Science in Mathematics and a specialization in Computer Science. I worked on Continual Learning for my Master's thesis under the supervision of Dr. S Balasubramanian. Prior to that, I completed my Bachelor of Science (Hons.) in Mathematics during which I worked on Masked Face In-Painting with Dr. Darshan Gera. More details can be found in the Project/Publications section.
 
-If you find these topics interesting or any other ideas, I would love to hear from you and discuss more :)
+If you find these topics interesting or have any other ideas, I would love to hear from you and discuss more :)
 
 I also play the saxophone to chill and am part of the amazing fusion brass band <a href='https://rhythmicenergy.in/'>Rhythmic Energy</a>. You can find more about the beautiful things we do at Rhythmic Energy on our <a href='https://www.instagram.com/rhythmicenergy/?hl=en'>Instagram</a>.
