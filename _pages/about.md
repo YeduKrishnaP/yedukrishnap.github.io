@@ -2,16 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: PhD @ <a href='https://ai.iith.ac.in/index.html'>Dept of AI, IIT Hyderabad</a> • Previously- <a href='sssihl.edu.in'>Sri Sathya Sai Institute of Higher Learning</a>
 
 profile:
   align: right
   image: prof_pic.png
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  # more_info: >
+  #   <p>555 your office number</p>
+  #   <p>123 your address street</p>
+  #   <p>Your City, State 12345</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,8 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi! I am Yedu Krishna, a PhD student at the Indian Institute of Technology, Hyderabad. My research interests include Continual Learning, Computer Vision and Deep Learning, and I love to work at the intersection of 
+<code class="language-plaintext highlighter-rouge">Mathematics x Computer Science</code>
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I graduated with my Master of Science in Mathematics with a specialization in Computer Science from [Sri Sathya Sai Institute of Higher Learning](sssihl.edu.in) in the summer of 2025. I worked on Continual Learning for my Master's thesis under the supervision of Dr. S Balasubramanian. Prior to that, I completed my Bachelor of Science (Hons.) in Mathematics during which I worked on Masked Face In-Painting with Dr. Darshan Gera.
