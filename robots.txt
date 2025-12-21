@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: yedukrishnap.github.io/about//sitemap.xml
+Sitemap: https://yedukrishnap.github.io/sitemap.xml
