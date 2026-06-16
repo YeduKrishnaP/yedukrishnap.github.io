@@ -5,7 +5,6 @@ description: Predict the face under the mask using a lightweight Residual Attent
 img: assets/img/RACUNET/RACUNET_Thumbnail.png
 importance: 3
 category: work
-related_publications: true
 ---
 
 As face masks emerged as a quintessential accessory during the outbreak of the COVID-19 pandemic, a significant challenge arose in recreating occluded faces. Our established security systems rely heavily on facial recognition, making this an urgent problem to solve. While extensive research has been conducted in the realm of facial in-painting and reconstruction using Deep Neural Networks, the specific task of unmasking faces while preserving subtle features—like occluded emotions—remains largely under-attempted. 

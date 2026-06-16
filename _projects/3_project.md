@@ -3,7 +3,7 @@ layout: page
 title: ClassifyVista
 description: Automated Detection and Classification of Gastrointestinal Bleeding in WCE Videos
 img: assets/img/Health_and_AI/ClassifyVista.png
-importance: 1
+importance: 4
 category: work
 ---
 
