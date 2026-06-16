@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: PhD @ <a href='https://ai.iith.ac.in/index.html'>Dept of AI, IIT Hyderabad</a> • Previously- <a href='https://www.sssihl.edu.in/'>Sri Sathya Sai Institute of Higher Learning</a>
 
