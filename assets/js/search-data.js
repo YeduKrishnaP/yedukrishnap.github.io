@@ -4,7 +4,7 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "about",
+    title: "About",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "Projects",
-          description: "Yet to be updated",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -382,9 +382,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-work-in-class-incremental-learning-s-il-structurally-stable-incremental-learning-has-been-accepted-for-publication-in-ieee-access",
           title: 'Our work in Class Incremental Learning S²IL - Structurally Stable Incremental Learning has...',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-masked-face-in-painting",
+          title: 'Masked Face In-Painting',
+          description: "Predict the face under the mask using a lightweight Residual Attention Conditioned UNets",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project.html";
             },},{id: "projects-project-2",
@@ -446,7 +446,7 @@ ninja.data = [{
         title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.linkedin.com/in/yedu-krishna-p your LinkedIn user name", "_blank");
+          window.open("https://www.linkedin.com/in/yedu-krishna-p", "_blank");
         },
       },{
         id: 'social-orcid',
