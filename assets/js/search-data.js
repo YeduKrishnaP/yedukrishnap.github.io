@@ -387,9 +387,9 @@ ninja.data = [{
           description: "Predict the face under the mask using a lightweight Residual Attention Conditioned UNets",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project.html";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-process-scheduling-and-insights-with-bpftrace",
+          title: 'Process Scheduling and Insights with BPFTRACE',
+          description: "A mini-project exploring Linux process scheduling, BCC, and BPFTRACE visualizations.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project.html";
             },},{id: "projects-project-3-with-very-long-name",
