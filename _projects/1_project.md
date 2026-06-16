@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Masked Face In-Painting
-description: Predict the face under the mask using a lightweight Residual Attention Conditioned UNets
+description: Predict the face under the mask using a lightweight Residual Attention Conditioned UNET
 img: assets/img/RACUNET/RACUNET_Thumbnail.png
 importance: 3
 category: work
@@ -69,3 +69,15 @@ To push the model's capabilities further and prevent overfitting, the dataset wa
 </div>
 
 To objectively verify the model's ability to recreate emotions accurately, the outputs were evaluated using a RESNET-18 based Facial Emotion Recognition classifier. With a rapid prediction time of just 0.015 seconds per image, RAC-UNET stands as a highly viable candidate for real-time video unmasking applications in the future.
+
+<div class="row mt-4">
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        <!-- PDF Viewer using an iframe -->
+        <iframe src="/assets/pdf/RACUNET_presentation.pdf" width="100%" height="600px" style="border: 1px solid #ddd; border-radius: 8px;">
+            This browser does not support PDFs. Please download the PDF to view it: <a href="/assets/pdf/RACUNET_presentation.pdf">Download PDF</a>.
+        </iframe>
+    </div>
+</div>
+<div class="caption">
+    The complete presentation from NCVPRIPG 2023: "Masked Face Completion using Residual Attention Conditional UNET".
+</div>

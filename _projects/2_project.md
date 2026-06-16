@@ -5,7 +5,6 @@ description: A mini-project exploring Linux process scheduling, BCC, and BPFTRAC
 img: assets/img/Architecture/architecture_bg.jpg
 importance: 2
 category: work
-giscus_comments: true
 ---
 
 ### Project Description
