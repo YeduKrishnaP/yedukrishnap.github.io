@@ -397,9 +397,9 @@ ninja.data = [{
           description: "Automated Detection and Classification of Gastrointestinal Bleeding in WCE Videos",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project.html";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+            },},{id: "projects-patching-the-past",
+          title: 'Patching the Past',
+          description: "Efficient and Reversible Federated Unlearning via Low-Rank Adaptation",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project.html";
             },},{id: "projects-project-5",
