@@ -384,7 +384,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-masked-face-in-painting",
           title: 'Masked Face In-Painting',
-          description: "Predict the face under the mask using a lightweight Residual Attention Conditioned UNets",
+          description: "Predict the face under the mask using a lightweight Residual Attention Conditioned UNET",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project.html";
             },},{id: "projects-process-scheduling-and-insights-with-bpftrace",
@@ -392,9 +392,9 @@ ninja.data = [{
           description: "A mini-project exploring Linux process scheduling, BCC, and BPFTRACE visualizations.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project.html";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+            },},{id: "projects-classifyvista",
+          title: 'ClassifyVista',
+          description: "Automated Detection and Classification of Gastrointestinal Bleeding in WCE Videos",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project.html";
             },},{id: "projects-project-4",
