@@ -1,81 +1,58 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Process Scheduling and Insights with BPFTRACE
+description: A mini-project exploring Linux process scheduling, BCC, and BPFTRACE visualizations.
+img: assets/img/Architecture/architecture_bg.jpg
 importance: 2
 category: work
 giscus_comments: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+### Project Description
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+In Operating Systems, the Scheduler refers to the program responsible for the removal of the currently executing process, selection of the next process, and the context switch involved in changing the states of these processes. The main goals of a scheduler are to ensure fast process response time, good throughput for background processes, and the avoidance of process starvation. 
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+For my mini-project in M.Sc Mathematics, guided by Shaju Abraham, Naveen Miriyalu, Dibyam Pradhan, and Dr. Raghunatha Sarma, I conducted a deep dive into Linux Schedulers. Modern OSes segregate virtual memory into user space and kernel space to provide memory protection. In Linux, processes are represented and stored using the `task_struct` structure, also known as the Process Descriptor.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+To analyze process scheduling, I utilized **BCC** and **bpftrace**. BCC is a toolkit for creating efficient kernel tracing, making BPF programs easier to write with kernel instrumentation in C. **bpftrace** is a high-level tracing language for Linux enhanced Berkeley Packet Filter (eBPF). 
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+During the project, several experiments were conducted:
+- Visualizing the effects of a CPU-bound operation on the frequency and utilization of the core by pinning a task to a single core.
+- Generating CPU-bound workloads and pinning them to a single core to see the effects on the scheduling of the processes (analyzing `offcputimes` and `offwaketimes`).
+- Generating IO workloads with FIO (Flexible I/O tester) and generating stack traces for `offcputime`, polled runqueue latency, and time spent on soft IRQs.
+
+I also generated **Flame graphs**—a visualization of hierarchical data created to visualize stack traces of profiled software. In our case, the flame graph of the stack trace showed that `fallocate64`, which is used to allocate memory on the fat file system, is called far too many times. Such operations, if not optimized, can be a potential bottleneck due to the inherently high latency of memory operations.
+
+### Native Linux Profiling and BPF Tracing
+
+Before the widespread adoption of eBPF, developers and administrators relied on a variety of built-in Linux tools to profile and trace system performance:
+- **`perf`**: The "Swiss army knife" of Linux profiling, used to measure CPU cycles, cache misses, and identify function hotspots.
+- **`strace` & `ltrace`**: Used to trace system calls and library calls made by a process, highly effective for debugging I/O or network bottlenecks.
+- **`top` / `htop` / `pidstat`**: Real-time monitors that reveal CPU, memory, and I/O utilization per process.
+- **`valgrind`**: A powerful suite (including tools like `memcheck` and `cachegrind`) for deep memory debugging and cache profiling, though it incurs significant performance overhead.
+
+However, the introduction of eBPF revolutionized tracing by allowing programmatic, low-overhead instrumentation directly within the kernel. BCC (BPF Compiler Collection) provides a vast suite of pre-built tools tailored for almost every subsystem of the Linux OS.
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm-10 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/Architecture/bcc_tracing_tools.png" title="Linux bcc/BPF Tracing Tools" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    A map of Linux bcc/BPF Tracing Tools demonstrating the sheer breadth of visibility eBPF provides. Notice how tools like <code>runqlat</code> and <code>offcputime</code> sit squarely in the Scheduler block, which were crucial for the analysis in this project.
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+Below you can view the complete presentation report for more details.
 
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+<div class="row mt-4">
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        <!-- PDF Viewer using an iframe -->
+        <iframe src="/assets/pdf/Schedulers_and_BPFTRACE_final.pdf" width="100%" height="600px" style="border: 1px solid #ddd; border-radius: 8px;">
+            This browser does not support PDFs. Please download the PDF to view it: <a href="/assets/pdf/Schedulers_and_BPFTRACE_final.pdf">Download PDF</a>.
+        </iframe>
+    </div>
 </div>
-```
 
-{% endraw %}
+<div class="caption">
+    The complete mini-project presentation: "Process Scheduling and Insights with BPFTRACE".
+</div>

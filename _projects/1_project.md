@@ -2,7 +2,7 @@
 layout: page
 title: Masked Face In-Painting
 description: Predict the face under the mask using a lightweight Residual Attention Conditioned UNets
-img: assets/img/RACUNET_Thumbnail.png
+img: assets/img/RACUNET/RACUNET_Thumbnail.png
 importance: 3
 category: work
 related_publications: true
